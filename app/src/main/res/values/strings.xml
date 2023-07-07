@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">CinemaTicketProj</string>
+    <string name="buy_tickets">Buy tickets</string>
+    <string name="tickets">4 Tickets</string>
+    <string name="price_100">$100.00</string>
+    <string name="available">Available</string>
+    <string name="taken">Taken</string>
+    <string name="selected">Selected</string>
+    <string name="booking">Booking</string>
+</resources>
