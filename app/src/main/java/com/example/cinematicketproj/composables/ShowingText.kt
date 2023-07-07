@@ -6,9 +6,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import com.example.cinematicketproj.ui.theme.OnBackGround
-import com.example.cinematicketproj.ui.theme.OnPrimary
 import com.example.cinematicketproj.ui.theme.TextSmallGreyStyle
-import com.example.cinematicketproj.ui.theme.primaryTextColor
 
 @Composable
 fun ShowText(text: String) {

@@ -27,10 +27,6 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-//            HomeScreen()
-//            FilmScreen()
-//            BookingScreen()
-
 
             val navController = rememberNavController()
             Scaffold(
@@ -39,22 +35,22 @@ class MainActivity : ComponentActivity() {
                         items = listOf(
                             BottomNavItem(
                                 route = "home",
-                                icon = R.drawable.hour,
+                                icon = R.drawable.home,
                                 name = "Home"
                             ),
                             BottomNavItem(
                                 route = "search",
-                                icon = R.drawable.hour,
+                                icon = R.drawable.search,
                                 name = "Search"
                             ),
                             BottomNavItem(
                                 route = "booking",
-                                icon = R.drawable.hour,
+                                icon = R.drawable.home,
                                 name = "Booking",
                                 badgeCount = 5
                             ), BottomNavItem(
                                 route = "profile",
-                                icon = R.drawable.hour,
+                                icon = R.drawable.home,
                                 name = "Profile"
                             )
                         ),

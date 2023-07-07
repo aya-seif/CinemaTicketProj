@@ -82,77 +82,6 @@ fun HomeScreen(
     HomeScreenContent(state = state)
 
 
-//    val pagerState = rememberPagerState(3)
-//    val matrix = remember {
-//        ColorMatrix()
-//    }
-//    Column {
-//        HorizontalPager(
-//            modifier = Modifier
-//                .padding(top = 40.dp),
-//            contentPadding = PaddingValues(horizontal = 56.dp),
-//            count = images.size,
-//            state = pagerState,
-//        ) { index ->
-//            val pageOffset = (pagerState.currentPage - index) + pagerState.currentPageOffset
-//            val imageSize by animateFloatAsState(
-//                targetValue = if (pageOffset != 0.0f) 0.75f else 1f,
-//                animationSpec = tween(2000)
-//            )
-//            LaunchedEffect(key1 = imageSize) {
-//                if (pageOffset != 0.0f) matrix.setToSaturation(0f) else matrix.setToSaturation(1f)
-//            }
-//            Image(
-//                modifier = Modifier
-//                    .width(320.dp)
-//                    .height(400.dp)
-//                    .graphicsLayer {
-//                        scaleX = imageSize
-//                        scaleY = imageSize
-//                        alpha = imageSize
-//                    }
-//                    .clip(RoundedCornerShape(32.dp)),
-//                contentScale = ContentScale.Crop,
-//                painter = painterResource(id = images[index]),
-//                contentDescription = "",
-//                colorFilter = ColorFilter.colorMatrix(matrix)
-//            )
-//        }
-//        Row(
-//            modifier = Modifier
-//                .padding(top = 32.dp, end = 16.dp)
-//                .align(Alignment.CenterHorizontally)
-//                .wrapContentWidth()
-//                .background(lightGrey, RoundedCornerShape(16.dp))
-//                .padding(8.dp),
-//            verticalAlignment = Alignment.CenterVertically
-//        ) {
-//            IconButton(
-//                onClick = { /* Do something */ },
-//                modifier = Modifier
-//                    .size(16.dp)
-//            ) {
-//                Icon(
-//                    painter = painterResource(id = R.drawable.hour),
-//                    contentDescription = "Favorite",
-//                    tint = White
-//                )
-//            }
-//            Text("2h 23m", color = White, modifier = Modifier.padding(start = 4.dp))
-//        }
-//
-//        SpacerHorizontal8()
-//        ShowText("")
-//        Row(
-//            modifier = Modifier
-//                .fillMaxWidth(),
-//            horizontalArrangement = Arrangement.Center
-//        ) {
-////            Chip(title = "Fantasy")
-////            SpacerHorizontal8()
-////            Chip(title = "Adventure")
-//        }
-
 }
 
 
@@ -166,9 +95,8 @@ fun HomeScreenContent(
         ColorMatrix()
     }
 
-
-
     Column() {
+
         Column {
             HorizontalPager(
                 modifier = Modifier

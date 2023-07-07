@@ -30,8 +30,8 @@ import com.example.cinematicketproj.composables.CancelButton
 import com.example.cinematicketproj.composables.CinemaSeats
 import com.example.cinematicketproj.composables.DatePicker
 import com.example.cinematicketproj.composables.RoundedOrangeButton
+import com.example.cinematicketproj.composables.ShowingImage
 import com.example.cinematicketproj.composables.hourRow
-import com.example.cinematicketproj.composables.showImage
 import com.example.cinematicketproj.screens.film_detail.percentOfScreenHeight
 import com.example.cinematicketproj.ui.theme.TextXLargeBold
 import com.example.cinematicketproj.ui.theme.White
@@ -52,7 +52,7 @@ fun BookingScreen(
 
         CancelButton()
 
-        showImage(
+        ShowingImage(
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(start = 16.dp, end = 16.dp, top = 16.dp)

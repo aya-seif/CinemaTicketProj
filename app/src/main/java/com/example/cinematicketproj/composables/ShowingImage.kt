@@ -24,7 +24,7 @@ fun PosterImage(imageRes: Int) {
 }
 
 @Composable
-fun showImage(
+fun ShowingImage(
     modifier: Modifier,
     resId: Int,
     contentScale: ContentScale

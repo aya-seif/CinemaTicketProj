@@ -16,6 +16,7 @@ import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.platform.LocalDensity
@@ -31,9 +32,8 @@ import com.example.cinematicketproj.composables.ShowText
 import com.example.cinematicketproj.composables.PlayButtonView
 import com.example.cinematicketproj.composables.RoundedOrangeButton
 import com.example.cinematicketproj.composables.FilmTitle
-import com.example.cinematicketproj.composables.showImage
+import com.example.cinematicketproj.composables.ShowingImage
 import com.example.cinematicketproj.ui.theme.Orange
-import com.example.cinematicketproj.ui.theme.lightGrey
 import com.example.cinematicketproj.ui.theme.White
 
 @Composable
@@ -57,7 +57,7 @@ private fun FilmScreenContent(
             modifier = Modifier
         ) {
 
-            showImage(
+            ShowingImage(
                 modifier = Modifier
                     .fillMaxWidth()
                     .height(percentOfScreenHeight(47).dp),
@@ -73,7 +73,7 @@ private fun FilmScreenContent(
                     .padding(top = 32.dp, end = 16.dp)
                     .align(Alignment.TopEnd)
                     .wrapContentWidth()
-                    .background(lightGrey, RoundedCornerShape(16.dp))
+                    .background(Color.Transparent, RoundedCornerShape(16.dp))
                     .padding(8.dp)
             )
 
